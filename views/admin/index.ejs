@@ -1,0 +1,59 @@
+<%- include("header") -%>
+
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+      <!-- Content Header (Page header) -->
+      <section class="content-header">
+        <h1>
+          Tela Inicial
+        </h1>
+        <ol class="breadcrumb">
+          <li><a href="/"><i class="fa fa-home"></i> Home</a></li>
+          <li class="active">Usuários</li>
+        </ol>
+      </section>
+
+      <!-- Main content -->
+      <section class="content container-fluid">
+
+        <div class="row">
+          <!-- /.col -->
+          <div class="col-md-6 col-sm-6 col-xs-12">
+            <div class="info-box" onclick="window.location.href = '/admin/usuarios'" style="cursor:pointer">
+              <span class="info-box-icon bg-yellow">
+                <i class="ion ion-ios-people-outline"></i>
+              </span>
+
+              <div class="info-box-content">
+                <span class="info-box-text">Usuários</span>
+                <span class="info-box-number"><%= ativos %></span>
+              </div>
+              <!-- /.info-box-content -->
+            </div>
+            <!-- /.info-box -->
+          </div>
+          <!-- /.col -->
+          <div class="col-md-6 col-sm-6 col-xs-12">
+            <div class="info-box" onclick="window.location.href = '/admin/sugestoes'" style="cursor:pointer">
+              <span class="info-box-icon bg-aqua">
+                <i class="ion ion-ios-calendar"></i>
+              </span>
+
+              <div class="info-box-content">
+                <span class="info-box-text">Sugestões</span>
+                <span class="info-box-number"><%= sugestoes %></span>
+              </div>
+              <!-- /.info-box-content -->
+            </div>
+            <!-- /.info-box -->
+          </div>
+          <!-- /.col -->
+          
+          
+        </div>
+
+      </section>
+      <!-- /.content -->
+    </div>
+    <!-- /.content-wrapper -->
+    <%- include("footer") -%>
